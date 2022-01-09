@@ -8,6 +8,12 @@ pipeline {
       }
     }
 
+    stage('') {
+      steps {
+        archiveArtifacts(artifacts: 'customjoinandleave-1.1-SNAPSHOT.jar', onlyIfSuccessful: true)
+      }
+    }
+
   }
   tools {
     maven '1'
