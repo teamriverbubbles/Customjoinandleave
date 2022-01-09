@@ -2,8 +2,10 @@ pipeline {
   agent any
   stages {
     stage('build') {
+      agent any
       steps {
-        sh ' sh "mvn -Dmaven.test.failure.ignore=true clean package"'
+        build 'clean'
+        build 'package'
       }
     }
 
