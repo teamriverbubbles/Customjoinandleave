@@ -10,7 +10,7 @@ pipeline {
 
     stage('save files') {
       steps {
-        archiveArtifacts '**/*.jar'
+        archiveArtifacts '**/*.*'
       }
     }
 
