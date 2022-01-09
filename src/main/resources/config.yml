@@ -1,0 +1,4 @@
+#placeholders without placeholderapi:
+# %player_name%
+
+CommandToRun: say Hello %player_name%!
