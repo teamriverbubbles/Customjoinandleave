@@ -10,7 +10,7 @@ pipeline {
 
     stage('save files') {
       steps {
-        archiveArtifacts(artifacts: 'target/customjoinandleave-1.1-SNAPSHOT.jar', onlyIfSuccessful: true)
+        archiveArtifacts(artifacts: '/var/lib/jenkins/workspace/Customjoinandleave_main@2/target/customjoinandleave-1.1-SNAPSHOT.jar', onlyIfSuccessful: true)
       }
     }
 
