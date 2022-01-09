@@ -2,12 +2,7 @@ pipeline {
   agent any
   stages {
     stage('build') {
-      agent {
-        node {
-          label '1'
-        }
-
-      }
+      agent any
       steps {
         sh 'mvn clean package -Dlicense.skip=true'
       }
