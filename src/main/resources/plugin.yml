@@ -1,0 +1,11 @@
+name: Customjoinandleave
+version: '${project.version}'
+main: teamriverbubbles.customjoinandleave.Customjoinandleave
+api-version: 1.18
+prefix: CJL
+load: STARTUP
+authors: [ xavierhorwood ]
+description: run command on join and message
+website: https://teamriverbubbles.com
+
+softdepend: [PlaceholderAPI] # This is used, if your plugin works without PlaceholderAPI.
