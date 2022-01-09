@@ -8,9 +8,9 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('save files') {
       steps {
-        archiveArtifacts(artifacts: 'customjoinandleave-1.1-SNAPSHOT.jar', onlyIfSuccessful: true)
+        archiveArtifacts(artifacts: 'target/customjoinandleave-1.1-SNAPSHOT.jar', onlyIfSuccessful: true)
       }
     }
 
