@@ -4,8 +4,7 @@ pipeline {
     stage('build') {
       agent any
       steps {
-        build 'clean'
-        build 'package'
+        sh 'mvn clean install -Dlicense.skip=true'
       }
     }
 
