@@ -1,16 +1,20 @@
 pipeline {
-  agent any
-  stages {
-    stage('build') {
-      agent any
-      steps {
-        sh 'mvn clean package -Dlicense.skip=true'
-      }
+  agent {
+    node {
+      label 'Built-In Node'
     }
 
-    stage('save files') {
+  }
+  stages {
+    stage('build') {
+      agent {
+        node {
+          label '1'
+        }
+
+      }
       steps {
-        archiveArtifacts '**/*.*'
+        sh 'mvn clean package -Dlicense.skip=true'
       }
     }
 
