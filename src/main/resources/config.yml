@@ -1,4 +1,5 @@
 #placeholders without placeholderapi:
 # %player_name%
+# %player_uuid%
 
 CommandToRun: say Hello %player_name%!
