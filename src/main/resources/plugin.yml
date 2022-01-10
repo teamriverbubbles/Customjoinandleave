@@ -8,4 +8,4 @@ authors: [ xavierhorwood ]
 description: run command on join and message
 website: https://teamriverbubbles.com
 
-softdepend: [PlaceholderAPI] # This is used, if your plugin works without PlaceholderAPI.
+softdepend: [PlaceholderAPI]
