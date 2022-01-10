@@ -16,7 +16,7 @@ public final class Customjoinandleave extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
-        config.addDefault("CommandToRun", "say Hello Player!");
+        config.addDefault("CommandToRun", "say Hello %player_name%!");
         config.options().copyDefaults(true);
         saveConfig();
 
