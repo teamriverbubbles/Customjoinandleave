@@ -52,6 +52,7 @@ public final class Customjoinandleave extends JavaPlugin implements Listener {
         if(!enablePlaceholderAPI) {
             //replace placeholders with values and send message
             command = command.replace("%player_name%", player.getName());
+            command = command.replace("%player_uuid%", player.getUniqueId().toString());
         }
         else
         {
