@@ -1,3 +1,11 @@
+/* Copyright (C) Xavier Horwood - All Rights Reserved
+ * You may use, distribute and modify this code under the
+ * terms of the GPL-3.0 license.
+ *
+ * You should have received a copy of the XYZ license with
+ * this file. If not, please write to: license@teamriverbubbles.com, or visit :
+ */
+
 package teamriverbubbles.customjoinandleave;
 
 import me.clip.placeholderapi.PlaceholderAPI;
