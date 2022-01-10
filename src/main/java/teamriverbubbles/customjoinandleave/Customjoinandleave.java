@@ -9,13 +9,22 @@
 package teamriverbubbles.customjoinandleave;
 
 import me.clip.placeholderapi.PlaceholderAPI;
+import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
+import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
 
 public final class Customjoinandleave extends JavaPlugin implements Listener {
 
@@ -24,6 +33,9 @@ public final class Customjoinandleave extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
+        int pluginId = 13909; // <-- Replace with the id of your plugin!
+        Metrics metrics = new Metrics(this, pluginId);
+
         config.addDefault("CommandToRun", "say Hello %player_name%!");
         config.options().copyDefaults(true);
         saveConfig();
